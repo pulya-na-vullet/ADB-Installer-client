@@ -1,9 +1,10 @@
 app_versions_in_device.txt
 test_device.txt
 user_apk_file.txt
-build/auto_install_apk_adb/localpycs/
-build/auto_install_apk_adb/
+build/APK Installer/localpycs/
+build/APK Installer/
 dist/app_versions_in_device.txt
 dist/test_device.txt
 dist/user_apk_file.txt
+APK Installer.spec
 auto_install_apk_adb.spec
