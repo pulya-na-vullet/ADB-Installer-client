@@ -1,5 +1,9 @@
-apk/app-RuPreprodFcm-debug-release-73.apk
 app_versions_in_device.txt
 test_device.txt
-device_id.txt
-успешные команды.txt
+user_apk_file.txt
+build/auto_install_apk_adb/localpycs/
+build/auto_install_apk_adb/
+dist/app_versions_in_device.txt
+dist/test_device.txt
+dist/user_apk_file.txt
+auto_install_apk_adb.spec
