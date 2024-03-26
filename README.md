@@ -1,5 +1,5 @@
 # ADB APK Installer Client
-![image](https://github.com/pulya-na-vullet/apkAutoInstaller/assets/61897393/6bca142b-bd68-40c6-9886-120b9e9a42f1)
+![image](https://github.com/pulya-na-vullet/apkAutoInstaller/assets/61897393/206f781e-65d6-4512-a010-77cb1c2e02ac)
 
 This application is a client for ADB that allows you to install a specific APK file on all connected ADB devices and emulators.
 
