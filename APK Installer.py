@@ -24,9 +24,9 @@ def get_app_versions():
             result = os.popen(f"adb -s {device_id} shell dumpsys package {app_name_adb_list_test_letu} | grep versionName").read()
             if result:
                 version_name = result.split("=")[1].strip()
-                output.write(f"{device_id} versionName={version_name}\n")
+                output.write(f"**{device_id}** : \nVersion = {version_name}\n")
             else:
-                output.write(f"{device_id} versionName=N/A\n")
+                output.write(f"**{device_id}** : \nVersion = N/A\n")
 
 def uninstall_app_to_all_devices():
     with open(file_for_save_test_device_id, 'r') as file:
@@ -60,6 +60,7 @@ def scan_and_get_versions():
 
 def scan_devices_id_and_safe_to_file_cicle():
     scan_devices_id_and_safe_to_file()
+    get_app_versions()
     app.after(1000, scan_devices_id_and_safe_to_file_cicle)
 
 def read_file(filename):
@@ -73,7 +74,7 @@ def open_apk_file():
         file.write(file_apk_path)
 
 def update_text_box():
-    device_list = read_file(file_for_save_test_device_id)
+    device_list = read_file(app_versions_in_device)
     textbox = customtkinter.CTkTextbox(app)
     textbox.delete("0.0", "end")
     textbox.insert("0.0", device_list)
@@ -87,8 +88,21 @@ app.geometry("240x400")
 app.resizable(False,False)
 scan_devices_id_and_safe_to_file_cicle()
 update_text_box()
+
 button = customtkinter.CTkButton(app, text="Open APK", command=open_apk_file, hover_color="green")
 button.grid(row=1, column=1, padx=20, pady=20)
+
 button = customtkinter.CTkButton(app, text="Global Install", command=unitall_and_install_apk_on_all_device_async, hover_color="red")
 button.grid(row=2, column=1, padx=20, pady=20)
+#Тут адский костыль с тем что бы ADB не сдохла с количеством поданных на нее команд
+button.configure(state="normal")
+def disable_button():
+    button.configure(state="disabled")
+    app.after(20000, enable_button)
+def enable_button():
+    button.configure(state="normal")
+def button_clicked():
+    disable_button()
+    unitall_and_install_apk_on_all_device_async()
+button.configure(command=button_clicked)
 app.mainloop()
