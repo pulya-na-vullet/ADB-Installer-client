@@ -1,4 +1,5 @@
 # ADB APK Installer
+![image](https://github.com/pulya-na-vullet/apkAutoInstaller/assets/61897393/9c851263-32b8-4c98-86a8-ced03122cf7f)
 
 Скачайте ADB:
 https://developer.android.com/tools/releases/platform-tools
@@ -7,15 +8,25 @@ https://developer.android.com/tools/releases/platform-tools
 
 Не забудьте прописать ADB.exe в переменных среды Windows:
 1. Найдите в Пуске  "Изменение системных переменных среды"
-![alt text](image.png)
+
+![image](https://github.com/pulya-na-vullet/apkAutoInstaller/assets/61897393/35ed3028-66c5-45c3-8755-58de6fb48575)
+
 2. Откройте переменные среды:
-![alt text](image-2.png)
+
+![image-1](https://github.com/pulya-na-vullet/apkAutoInstaller/assets/61897393/e948b138-d34a-4326-9983-4c4d29d3a2df)
+
 3. Нажмите "Изменить"
-![alt text](image-3.png)
+
+![image-3](https://github.com/pulya-na-vullet/apkAutoInstaller/assets/61897393/eb35ea54-6ede-40c3-964d-2da2b6f39b19)
+
 4. Нажмите "Создать"
-![alt text](image-4.png)
+
+![image-4](https://github.com/pulya-na-vullet/apkAutoInstaller/assets/61897393/b60ff5a6-0beb-4254-bea6-7677194bbdae)
+
 5. Укажите дирректорию до adb.exe
-![alt text](image-5.png)
+
+![image-5](https://github.com/pulya-na-vullet/apkAutoInstaller/assets/61897393/efb33253-6463-4d32-a6c9-0885758471c0)
+
 6. Нажмите "Ок"
 
 # Инструкция по работе с APK Installer:
