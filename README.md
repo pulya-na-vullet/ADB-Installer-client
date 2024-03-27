@@ -1,17 +1,37 @@
-# ADB APK Installer Client
-![image](https://github.com/pulya-na-vullet/apkAutoInstaller/assets/61897393/206f781e-65d6-4512-a010-77cb1c2e02ac)
+# ADB APK Installer
 
-This application is a client for ADB that allows you to install a specific APK file on all connected ADB devices and emulators.
+Скачайте ADB:
+https://developer.android.com/tools/releases/platform-tools
 
-For Windows computers, there is a precompiled exe file available for using the application.
+Настройка для Windows 11.
 
-For Mac users, you will need to compile the executable file from the source code yourself.
+Не забудьте прописать ADB.exe в переменных среды Windows:
+1. Найдите в Пуске  "Изменение системных переменных среды"
+![alt text](image.png)
+2. Откройте переменные среды:
+![alt text](image-2.png)
+3. Нажмите "Изменить"
+![alt text](image-3.png)
+4. Нажмите "Создать"
+![alt text](image-4.png)
+5. Укажите дирректорию до adb.exe
+![alt text](image-5.png)
+6. Нажмите "Ок"
 
-## Instructions
-1. Clone the repository to your local machine.
-2. Run the precompiled exe file on Windows or compile the executable file for Mac using the provided source code.
-3. Connect your Android devices or emulators to ADB.
-4. Run the application and select the APK file you want to install.
-5. The application will automatically install the APK on all connected devices and emulators.
+# Инструкция по работе с APK Installer:
+1. Сохраните APK Installer.exe в дирректорию где есть разрешение на запись файлов
+2. Запустите файл APK Installer.exe
+3. В текстовом окне отображены устройства и эмуляторы подключенные к ADB.exe (устройства у которых включена отладка по USB. Подробнее тут: https://developer.android.com/tools/adb)
+4. При первом запуске содается файл apk_to_unitall.txt в дирректории с файлом APK Installer.exe в котором прописаны тестовые приложения компании Лэтуаль. Вы можете сменить эти
+названия на названия своего приложения.
+5. Нажмите "Open APK" и выберите apk файл который Вам нужно установить на ваши девайсы.
+6. Нажмите "Global Install" программа удалит с Ваших тестовых устройств все APK файлы названия которых зашиты в apk_to_unitall.txt и установит на все подключнные девайсы и эмуляторы Ваше       приложение.
 
-Enjoy the convenience of quickly installing APK files on multiple devices with ADB APK Installer!
+# Дополнительный функционал:
+- Каждый новый подключенный девайс или эмулятор бутет отображен в текстовом поле.
+- Будет указана версия вашего приложения или отсутствие вашего приложения тогда вы увидите N/A напротив названия вашего приложения или приложений.
+
+# Планы по следующим версиям:
+- Улучшение производительномти и микролага интерфеса в 2 секунды.
+- Подключение FTP хранилища.
+- Добавление автоматической раскатки свежей версии APK файла появившегося в удаленном хранилище посредстовом добавления чекбокса.
