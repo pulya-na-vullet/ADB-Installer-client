@@ -6,5 +6,7 @@ build/APK Installer/
 dist/app_versions_in_device.txt
 dist/test_device.txt
 dist/user_apk_file.txt
+dist/apk_to_unitall.txt
 APK Installer.spec
 auto_install_apk_adb.spec
+apk_to_unitall.txt
