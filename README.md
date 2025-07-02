@@ -1,5 +1,5 @@
 # ADB APK Installer
-![image](https://github.com/pulya-na-vullet/apkAutoInstaller/assets/61897393/9c851263-32b8-4c98-86a8-ced03122cf7f)
+![image](https://github.com/user-attachments/assets/991abf71-f241-4bf7-8505-b0a30f71ff71)
 
 Скачайте ADB:
 https://developer.android.com/tools/releases/platform-tools
